@@ -1,0 +1,9 @@
+[package]
+name = "mvccstore"
+version = "0.1.0"
+authors = ["zhangjinpeng1987 <zhangjinpeng@pingcap.com>"]
+edition = "2018"
+
+[dependencies]
+rocksdb = { git = "https://github.com/pingcap/rocksdb.git" }
+
