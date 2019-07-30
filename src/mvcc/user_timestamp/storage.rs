@@ -13,6 +13,7 @@ const TIMESTAMP_LEN: usize = 8;
 
 pub struct Storage {
     // Store pre-write result.
+    // TODO: add wal for mem_store
     mem_store: HashMemStore,
 
     // Only committed value can write to DB.
