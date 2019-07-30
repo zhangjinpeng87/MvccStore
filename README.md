@@ -8,7 +8,7 @@ A toy storage, used to compare different mvcc storage models.
 
 - There is 2 column families: default and old
 - Prewrite store in memory with WAL
-- Only committed row write to RocksDB
+- Only committed data write to RocksDB
 - Use RocksDB's user timestamp to implement MVCC, RocksDB support `Get(key, ts)`
 - Move old versions into old CF when compaction
 
@@ -21,7 +21,7 @@ A toy storage, used to compare different mvcc storage models.
 ### Unistore
 - There is 2 column families: latest and old
 - Prewrite store in memory with WAL
-- Only committed row write to RocksDB
+- Only committed data write to RocksDB
 - Move old versions into old CF when update
 
 
