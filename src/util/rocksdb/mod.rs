@@ -5,7 +5,7 @@ use std::path::Path;
 use std::str::FromStr;
 use std::sync::Arc;
 
-use rocksdb::{
+pub use rocksdb::{
     ColumnFamilyOptions, DBCompressionType, DBOptions, Env, SliceTransform, DB, WriteOptions,
 };
 use storage::CF_DEFAULT;
